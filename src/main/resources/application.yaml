@@ -1,0 +1,12 @@
+stock:
+  api-token: ${API_TOKEN}
+
+spring:
+  config:
+    import: optional:file:.env[.properties]
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
